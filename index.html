@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINOD</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+            overflow-x: hidden;
+        }
+        @media (min-width: 1536px){
+        #container{width: 100%;}
+        #header {
+            height: 70px;
+            display: flex;}
+            #header p{display: none;}
+            .show-btn,
+            .hide-btn,
+            #chk {display: none;}
+        ul{
+            list-style: none;
+            background-color: rgba(0, 31, 63, 0.938) ;
+            display: flex;
+            justify-content: space-evenly;
+            height: 70px;
+            width: 100%;
+            max-width: 1536px;
+            position :fixed;}
+        ul li{
+            display : inline-block;
+            padding-top:9px;
+            padding-bottom: 8px;}
+        ul li a{
+            display: block;
+            font-size: 24px;
+            padding: 12px 20px;
+            padding-bottom: 12px;
+            text-decoration: none;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;}
+        ul li a:hover{
+                background-color: red;
+                color:white;
+                font-weight: bold;}
+        .picture{
+            height: 720px;
+            width: 100%;
+            max-width: 1536px;
+            background-image: url(./img/picture.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom :15px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h5{
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            width: 300px;
+        }
+        h5:hover{
+            margin-left:20px
+        }
+        .picture a{
+            text-decoration: none;
+        }
+        .section-1{
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 5px solid red;
+        }
+        #c1{
+            order: 1;
+        }
+        #c2{
+            order:2;
+        }
+        h4{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 35px;
+            background-color: #00203fff;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 20px;
+            width: 400px;
+            }
+        h3{
+            text-align: center;
+            margin: 10px;
+            background-color: #00203fff;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 20px;
+            width: 300px;    
+        }
+        h3:hover{
+            background-color: skyblue;
+            color: darkblue;
+            border: 5px solid darkblue;
+        }
+        .section-1 a{
+            text-decoration: none;
+        }
+        .circle:hover{
+            border: 10px dashed blue;
+        }
+        } 
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <p>BINOD</p>
+            <input type="checkbox" id="chk" />
+            <label for="chk" class="show-btn">
+              <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#header" style="font-weight: bold; color: white;">BINOD</a></li>
+                <li><a href="#sec1">Search</a></li>
+                <li><a href="#">Trendings</a></li>
+                <li><a href="#">Most Popular</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <label for="chk" class="hide-btn">
+                    <i class="fa fa-times"></i>
+                  </label>
+            </ul>
+        </div>
+        <div class="picture"><br>&nbsp;&nbsp;Best Indian Name Of Decades<br><br>
+        <a href="#"><h5>&nbsp;&nbsp;Best of 80s</h5></a><br>
+        <a href="#"><h5>&nbsp;&nbsp;Best of 90s</h5></a><br>
+        <a href="#"><h5>&nbsp;&nbsp;Early 2000s</h5></a><br>
+        <a href="#"><h5>&nbsp;&nbsp;Newest</h5></a>
+        </div>
+        <div class="section-1" id="sec1">
+            <h4>Click among options given below to search</h4>
+            <div id="c1"><a href="#"><img src="./img/baby-boy.jpg" class="circle" ></a><br><a href="#"><h3>Boys</h3></a></div>
+            <div id="c2"><a href="#"><img src="./img/baby-girl.jpg" class="circle" ></a><br><a href="#"><h3>Girls</h3></a></div>
+        </div>
+    </div>
+</body>
+</html>
