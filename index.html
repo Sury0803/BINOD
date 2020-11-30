@@ -83,9 +83,25 @@
             margin-top: 40px;
             width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+        }
+        #sec1l{
+            order: 1;
+            display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            width: 50%;
+            height: 320px;
+        }
+        #sec1r{
+            order: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            height: 320px;
         }
         .circle{
             height: 300px;
@@ -93,16 +109,17 @@
             border-radius: 50%;
             border: 5px solid red;
         }
-        #c1{
-            order: 1;
-        }
-        #c2{
-            order:2;
+        #search-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
         }
         h4{
             text-align: center;
-            margin-top: 10px;
-            margin-bottom: 35px;
+            margin-top: 20px;
+            margin-bottom: 25px;
             background-color: #00203fff;
             color: white;
             padding: 10px 10px;
@@ -200,6 +217,105 @@
             color: white;
             
         }
+        #sec-2{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 420px;
+            margin-top: 40px;
+        }
+        #left{
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+        }
+        #right{
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+        }
+        #left #l1{
+            order: 1;
+            width: 100%;
+            height: 140px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.719);
+            background-color: maroon;
+        }
+        #left #l2{
+            order: 2;
+            width: 100%;
+            height: 140px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.719);
+            background-color: maroon;
+        }
+        #left #l3{
+            order: 3;
+            width: 100%;
+            height: 140px;
+            background-color: maroon;
+        }
+        #right #r1{
+            order: 1;
+            width: 100%;
+            height: 140px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.719);
+            background-color: #00203fff;
+        }
+        #right #r2{
+            order: 2;
+            width: 100%;
+            height: 140px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.719);
+            background-color: #00203fff;
+        }
+        #right #r3{
+            order: 3;
+            width: 100%;
+            height: 140px;
+            background-color: #00203fff;
+        }
+        h2{
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #l1 p{
+            color: white;
+            margin: 10px;
+        }
+        #l2 p{
+            color: white;
+            margin: 10px;
+        }
+        #l3 p{
+            color: white;
+            margin: 10px;
+        }
+        #r1 p{
+            color: white;
+            margin: 10px;
+        }
+        #r2 p{
+            color: white;
+            margin: 10px;
+        }
+        #r3 p{
+            color: white;
+            margin: 10px;
+        }
+        #footer{
+            width: 100%;
+            height: 120px;
+            background-color:rgb(0, 31, 63);
+            margin-top: 50px;
+            font-size: 20px;
+            color: white;
+            padding: 30px;
+        }
         } 
     </style>
 </head>
@@ -213,31 +329,42 @@
             </label>
             <ul class="menu">
                 <li><a href="#header" style="font-weight: bold; color: white;">BINOD</a></li>
-                <li><a href="#sec1">Search</a></li>
-                <li><a href="../BINOD/Names/ab.html">Trendings</a></li>
-                <li><a href="#">Most Popular</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#search-heading">Search</a></li>
+                <li><a href="#sec-2">Trending</a></li>
+                <li><a href="#sec-2">Most Popular</a></li>
+                <li><a href="#footer">About Us</a></li>
                 <label for="chk" class="hide-btn">
                     <i class="fa fa-times"></i>
                   </label>
             </ul>
         </div>
         <div class="picture"><br>&nbsp;&nbsp;Best Indian Names Of Decades<br><br>
-        <a href="#"><h5>&nbsp;&nbsp;Best of 80s</h5></a><br>
-        <a href="#"><h5>&nbsp;&nbsp;Best of 90s</h5></a><br>
-        <a href="#"><h5>&nbsp;&nbsp;Early 2000s</h5></a><br>
-        <a href="#"><h5>&nbsp;&nbsp;Newest</h5></a>
+        <a href="#sec-2"><h5>&nbsp;&nbsp;Best of 80s</h5></a><br>
+        <a href="#sec-2"><h5>&nbsp;&nbsp;Best of 90s</h5></a><br>
+        <a href="#sec-2"><h5>&nbsp;&nbsp;Early 2000s</h5></a><br>
+        <a href="#sec-2"><h5>&nbsp;&nbsp;Newest</h5></a>
         </div>
-        <div class="section-1" id="sec1">
-            <h4>Click among options given below to search</h4>
-            <div id="c1"><a href="#search-section"><img src="./img/baby-boy.jpg" class="circle" ></a><br><center><a href="#search-section"><h3>Boys</h3></a></center></div>
-            <div id="c2"><a href="#girls"><img src="./img/baby-girl.jpg" class="circle" ></a><br><center><a href="#girls"><h3>Girls</h3></a></center></div>
+        <div id="search-heading"><h4 style="text-align: center;">Click among options given below to search</h4></div>
+        <div class="section-1">
+            
+        <div id="sec1l">
+            <div id="c1">
+                <a href="#search-section"><img src="./img/baby-boy.jpg" class="circle" ></a><br>
+                <center><a href="#search-section"><h3>Boys</h3></a></center>
+            </div>
+        </div>
+        <div id="sec1r">
+            <div id="c2">
+                <a href="#girls"><img src="./img/baby-girl.jpg" class="circle" ></a><br>
+                <center><a href="#girls"><h3>Girls</h3></a></center>
+            </div>
+        </div>
         </div>
         <div id="search-section"><h2 style="font-weight: bold; color: black;text-align: center; margin-top: 40px;margin-bottom: 60px;">Search-Section</h2>
         </div>
         <div class="boys"><h1 style="color: white; margin-top: 15px;text-align: center;margin-bottom: 30px;">For boys choose the desired starting letter</h1>
         <p style="line-height: 80px;">
-        <a href="./Names/boys/ab.html">A</a>&nbsp;&nbsp;
+        &nbsp;<a href="./Names/boys/ab.html">A</a>&nbsp;&nbsp;
         <a href="./Names/boys/bb.html">B</a>&nbsp;&nbsp;
         <a href="./Names/boys/cb.html">C</a>&nbsp;&nbsp;
         <a href="./Names/boys/db.html">D</a>&nbsp;&nbsp;
@@ -267,7 +394,7 @@
         </div>
         <div id="girls"><h1 style="color: white; margin-top: 15px;text-align: center;margin-bottom: 30px;">For girls choose the desired starting letter</h1>
             <p style="line-height: 80px;">
-                <a href="./Names/boys/ab.html">A</a>&nbsp;&nbsp;
+                &nbsp;<a href="./Names/boys/ab.html">A</a>&nbsp;&nbsp;
                 <a href="./Names/boys/bb.html">B</a>&nbsp;&nbsp;
                 <a href="./Names/boys/cb.html">C</a>&nbsp;&nbsp;
                 <a href="./Names/boys/db.html">D</a>&nbsp;&nbsp;
@@ -294,6 +421,53 @@
                 <a href="./Names/boys/yb.html">Y</a>&nbsp;&nbsp;
                 <a href="./Names/boys/zb.html">Z</a>&nbsp;&nbsp;
             </p>
+        </div>
+        <div id="sec-2">
+            <div id="left">
+                <div id="l1"><h2 style="color: white;">Best of 80s</h2>
+                <p>
+                    <u><b><i>Boys</i></b></u>: Rajesh, Dharminder, Jagdish, Rajnath, Aloknath, Amarnath, Jitender, Mithun, Shravan, Surendra, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rajendra, Krishna, Raheem, Kartik, Farahan, Chiranjeevi, Aanandram, Jairam, Ram.<br>
+                    <u><b><i>Girls</i></b></u>: Rekha, Jay, Sushma, Sharda, Seeta, Geeta, Bharkha, Rupali, kishori, Methali, Madhuri, Sridevi, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chandramukhi, Nargis, Farah, Kajol, Tanuja, Anarkali, Laxmi, Gauri, Sushmita, Gia.   
+                </p>
+                </div>
+                <div id="l2"><h2 style="color: white;">Best of 90s</h2>
+                <p>
+                    <u><b><i>Boys</i></b></u>: Arjun, Karan, Raj, Rohit, Ronit, Vinod, Vijay, Ajay, Aryan, Ayush, Shivam, Rahul, Dev, Himanshu, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sumit, Rakesh, Sanjay, Harshit, Tejas, Akarsh, Rajash, Harsh, Salman, Sharukh, Anuj. <br>
+                    <u><b><i>Girls</i></b></u>: Kareena, Aishwariya, Karishma, Prachi, Priya, Piya, Disha, Diya, Neetu, Nidhi, Meena, Priyanka, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Isha, Shivangi, Anjali, Sukriti, Kirti, Tanya, Vanshika, Shalini, Nikita, Kavita, Aanchal.  
+                </p>
+                </div>
+                <div id="l3"><h2 style="color: white;">Early 2000s</h2>
+                <p>
+                    <u><b><i>Boys</i></b></u>: Suryansh, Vansh, Ansul, Priyanshu, Priyank, Abhi, Vishesh, Vishal, Mayank, Vaibhav, Nikhil, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nitesh, Rehan, Shivanshu, Sid, Virat, Viraj, Siraj, Shezad, Hitesh, Ali, Nishant, Asim. <br>
+                    <u><b><i>Girls</i></b></u>: Shriyanshi, Aisha, Hina, Gauhar, Rubina, Nikki, Plaksha, Sandhya, Riya, Ishu, Somya, Srishti, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divya, Shefali, Shenaaz, Satakshi, Shakshi, Shradha, Kamya, Neha, Sara, Zara, Jennifer.
+                </p></div>
+            </div>
+            <div id="right">
+                <div id="r1"><h2 style="color: white;">Trending</h2>
+                <p>
+                    <u><b><i>Boys</i></b></u>: Siddharth, Asim, Rehan, Nhikhil, Rahul, Taimur, Tony, Kartik, Virat, Rohit, Aly, Sushant, Prince, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samar, Eijaz, Nishant, Suryansh, Priyank, Gurmeet, Shebaaz, Kapil, Mohsin, Darshan. <br>
+                    <u><b><i>Girls</i></b></u>: Shenaaz, Divya, Aisha, Ash, Neha, Nancy, Mahira, Kaira, Naira, Ipsita, Anushka, Ria, Khushi, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apurva, Shyrinn, Arishfa, Niharika, Sukiriti, Sneha, Adah, Hina, Ashima, Janvi, Rajvee.
+                </p>
+            </div>
+                <div id="r2"><h2 style="color: white;">Most Popular</h2>
+                    <p>
+                    <u><b><i>Boys</i></b></u>: Vinod, Vijay, Rahul, Vishal, Mayank, Akshay, Raj, Rakesh, Sanjay, Anil, Anoop, Neeraj, Virat, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rohit, Ayush, Aly, Taimur, Sharukh, Salman, Nikhil, Gaurav, Akash, Vikas, Pankaj, Aryan. <br> 
+                    <u><b><i>Girls</i></b></u>: Rashmi, Sara, Devoleena, Kavita, Jasmine, Gopi, Aarti, Mahira, Shenaaz, Aisha, Ashwariya, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Neelam, Naira, Kaira, Khushi, Lata, Ritika, Diya, Riya, Prachi, Nandini, Pooja, Shalini, Nikki.
+                    </p>
+                </div>
+                <div id="r3"><h2 style="color: white;">Newest</h2>
+                    <p>
+                    <u><b><i>Boys</i></b></u>: Kairav, Awez, Aarav, Aarush, Abeer, Atharv, Dakshesh, Ekansh, Gaurang, Ishaan, Manan, Daksh, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nakul, Rayaan, Rudranew, Rushil, Samaksh, Samar, Udarsh, Vedant, Vehaan, Vivaan, Yatin. <br>
+                    <u><b><i>Girls</i></b></u>: Goldy, Apurviya, Anu, Keshva, Kaira, Aarna, Chhaya, Chakrika, Chara, Daksha, Dhirti, Darika, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ekaja, Rabhya, Shravya, Ela, Gulika, Hiral, Hemangini, Jeevika, Kashvi, Kalki, Oorvi, Turvi.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <center>Website template for FullStack Project 2020-21  
+                <br><a href="#header" style="text-decoration: none; color: white; font-weight:bold;">Back to top</a><br>
+                <U><a href="https://sury0803.github.io/BINOD/index.html" style="text-decoration: none; color: white; font-weight:bold;">BINOD</a></U>
+            </center>
         </div>
 </div>
 </body>
